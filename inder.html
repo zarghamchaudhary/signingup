@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container {
+    width: 390px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    ;
+}
+
+#signup-form {
+    display: flex;
+    flex-direction: column;
+}
+#signup-form label{
+    margin-left: 20px;
+}
+
+input {
+    margin-left: 20px;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-left: 20px;
+    width: 300px;
+       background-color: #4477CE;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #4477CE;
+}
+
+#signup-account {
+    color: rgb(0, 0, 0); 
+    text-decoration: none; 
+}
+
+#signup-account:hover {
+    color:rgb(247, 64, 64);
+}
+
+    </style>
+    
+    <div class="container">
+        <form id="signup-form">
+          <h2 style="text-align: center ; font-family: Arial, Helvetica, sans-serif;">SIGNUP</h2>
+          <label for="name">Enter Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+          <label for="email">Enter Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+          <label for="password">Enter Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+          <a href="login.html"id="signup-account">Already have an account</a>
+          <button type="submit">SIGNUP</button>
+      </form>
+    </div>
+</body>
+</html>
